@@ -2,7 +2,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15
-    container_name: my_postgres
+    container_name: my-postgres
     restart: always
     environment:
       POSTGRES_USER: admin
@@ -14,7 +14,7 @@ services:
       - "5432:5432"
     pgadmin:
       image: dbpage/pgadmin4
-      container_name: my_pgadmin
+      container_name: my-pgadmin
       restart: always
       environment:
         PGADMIN_DEFAULT_EMAIL: admin@admin.com
